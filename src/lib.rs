@@ -8,7 +8,7 @@ mod tests {
     use graphviz_rust::dot_generator::*;
     use graphviz_rust::parse;
     use graphviz_rust::attributes::GraphAttributes as GAttributes;
-    use self::graphviz_rust::attributes::{EdgeAttributes, NodeAttributes, rankdir, shape};
+    use self::graphviz_rust::attributes::{color_name, EdgeAttributes, NodeAttributes, rankdir, shape};
     use self::graphviz_rust::cmd::{CommandArg, Format};
     use self::graphviz_rust::exec;
     use self::graphviz_rust::printer::{DotPrinter, PrinterContext};
