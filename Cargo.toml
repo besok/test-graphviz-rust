@@ -1,0 +1,7 @@
+[package]
+name = "test-graphviz-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+graphviz-rust = "0.1.2"
