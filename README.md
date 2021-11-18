@@ -1,1 +1,1 @@
-it is a backend for the [article](https://medium.com/@zhguchev/how-to-use-graphviz-in-your-rust-code-eb2c5771cfab) on medium.com 
+Just a repo with examples from the tutorial ['How to use Graphviz in your rust code'](https://medium.com/@zhguchev/how-to-use-graphviz-in-your-rust-code-eb2c5771cfab) explaining how to use the library [**graphviz-rust**](https://crates.io/crates/graphviz-rust)
