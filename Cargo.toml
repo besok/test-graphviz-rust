@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-graphviz-rust = "0.1.2"
+graphviz-rust = "0.2.1"

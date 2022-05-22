@@ -133,22 +133,7 @@ mod tests {
                 edge!(node_id!("8") => node_id!("6");attr!("label",esc "\"S(b)\"")),
                 edge!(node_id!("8") => node_id!("5");attr!("label",esc "\"S(a)\""))
             );
-
         assert_eq!(graph.unwrap(), manual_graph);
-    }
-
-    fn print_test(){
-        let mut g = graph!(id!("id"));
-
-        for el in (1..10).into_iter() {
-            if el % 2 == 0 {
-                g.add_stmt(stmt!(node!(el)))
-            } else {
-                g.add_stmt(stmt!(subgraph!(el)))
-            }
-        }
-        println!("{}",g.print(&mut PrinterContext::default()));
-        assert_eq!(178896, g.print(&mut PrinterContext::default()).len())
     }
 
     #[test]
@@ -166,7 +151,7 @@ mod tests {
 
 
         let p = "1.svg";
-        let out = exec(g.clone(), PrinterContext::default(), vec![
+        let out = exec(g.clone(), &mut PrinterContext::default(), vec![
             CommandArg::Format(Format::Svg),
             CommandArg::Output(p.to_string())
         ]).unwrap();
